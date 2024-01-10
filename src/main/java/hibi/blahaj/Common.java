@@ -12,22 +12,21 @@ public class Common {
 
 	public Common() {
 		DeferredRegister<Item> items = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
-		items.register("blue_shark",
-				() -> new CuddlyItem(new Item.Properties().stacksTo(1),
-						"item.blahaj.blue_shark.tooltip"));
-		items.register("bread",
-				() -> new CuddlyItem(new Item.Properties().stacksTo(1), null));
 
-		items.register("gray_shark",
-				() -> new CuddlyItem(new Item.Properties().stacksTo(1),
-						"item.blahaj.gray_shark.tooltip"));
-		items.register("blue_whale",
-				() -> new CuddlyItem(new Item.Properties().stacksTo(1),
-						"item.blahaj.blue_whale.tooltip"));
-		items.register("pink_shark",
-				() -> new CuddlyItem(new Item.Properties().stacksTo(1),
-						"item.blahaj.pink_shark.tooltip"));
+		registerCuddlyItem(items, "blue_shark", "item.blahaj.blue_shark.tooltip");
+		registerCuddlyItem(items, "bread", null);
+		registerCuddlyItem(items, "gray_shark", "item.blahaj.gray_shark.tooltip");
+		registerCuddlyItem(items, "blue_whale", "item.blahaj.blue_whale.tooltip");
+		registerCuddlyItem(items, "pink_shark", "item.blahaj.pink_shark.tooltip");
 
 		items.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
+
+	private static void registerCuddlyItem(DeferredRegister<Item> items, String name, String tooltip) {
+		items.register(name, () -> new CuddlyItem(new Item.Properties().stacksTo(1),
+				tooltip));
+	}
+
+	// Need to implement smth so the items are in a blahaj tab in creative mode. But
+	// noo idea how
 }
