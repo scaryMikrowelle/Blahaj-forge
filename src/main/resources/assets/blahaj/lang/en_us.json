@@ -1,0 +1,13 @@
+{
+  "item.blahaj.blue_shark": "Soft Toy Shark",
+  "item.blahaj.blue_shark.tooltip": "a.k.a. Blahaj",
+  "item.blahaj.gray_shark": "Gray Toy Shark",
+  "item.blahaj.gray_shark.tooltip": "a.k.a. Klappar Haj",
+  "item.blahaj.blue_whale": "Soft Toy Blue Whale",
+  "item.blahaj.blue_whale.tooltip": "a.k.a. Blavingad",
+  "item.blahaj.pink_shark": "Soft Toy Pink Whale",
+  "item.blahaj.pink_shark.tooltip": "a.k.a. Femhaj",
+  "item.blahaj.bread": "Bread Pillow",
+  "tooltip.blahaj.owner.craft": "Crafted by %s",
+  "tooltip.blahaj.owner.rename": "%s of %s"
+}
