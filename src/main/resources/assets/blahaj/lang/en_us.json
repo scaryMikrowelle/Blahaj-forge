@@ -9,5 +9,6 @@
   "item.blahaj.pink_shark.tooltip": "a.k.a. Femhaj",
   "item.blahaj.bread": "Bread Pillow",
   "tooltip.blahaj.owner.craft": "Crafted by %s",
-  "tooltip.blahaj.owner.rename": "%s of %s"
+  "tooltip.blahaj.owner.rename": "%s of %s",
+  "response.blahaj.give_away": "No touchy my blahaj >:c"
 }
